@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
 import './Header.css';
 
 class Header extends React.Component {
@@ -9,7 +11,7 @@ class Header extends React.Component {
         <span className="HeaderTitle"><h1>Quizzy </h1>
 
         </span>
-        <span className="HeaderTitle"><h1>Name </h1>
+        <span className="HeaderTitle"><h1>  {this.props.uname !== '' ? `Hello  ${this.props.uname}` : ''} </h1>
 
         </span>
 
@@ -20,4 +22,9 @@ Header.defaultProps = {
 };
 Header.propTypes = {
 };
-export default Header;
+const mapStateToProps = state => ({
+
+  uname: state.quiz.uname,
+
+});
+export default connect(mapStateToProps, null)(Header);
