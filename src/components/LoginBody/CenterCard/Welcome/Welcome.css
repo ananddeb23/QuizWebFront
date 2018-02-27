@@ -1,0 +1,17 @@
+.Welcome{
+    text-align: center;
+    background-color: #6BE5F0;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+
+}
+.WelcomeBlack{
+    font-size: 40px;
+    color: black;
+}
+.WelcomeWhite{
+    font-size: 40px;
+    color: white;
+}

@@ -1,0 +1,14 @@
+.Header{
+    background-color: black;
+    color: white;
+    flex-grow: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.HeaderTitle{
+   
+}

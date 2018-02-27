@@ -1,0 +1,17 @@
+.CenterCard{
+    width: 60%;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    background-color:transparent;
+}
+@media (max-width: 1300px) {
+    .CenterCard {
+        /* margin-right: 9px; */
+      flex-direction: column;
+      height: 700px;
+      
+    }
+}

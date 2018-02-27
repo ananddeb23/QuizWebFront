@@ -1,0 +1,26 @@
+.LoginInput{
+    background-color: white;
+    color: black;
+    align-items: center;
+    padding: 30px;
+    flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+}
+.LoginInputArea{
+    width:100%;
+    border: 2px solid black;
+    height: 30px;
+}
+.LoginButton{
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 60%;
+    height: 30px;
+}
+.LoginText{
+    font-size: 30px;
+}
+.LoginLabel{
+    font-size: 20px;
+}
