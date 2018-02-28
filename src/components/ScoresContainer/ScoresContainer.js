@@ -66,6 +66,10 @@ class ScoresContainer extends React.Component {
 ScoresContainer.defaultProps = {
 };
 ScoresContainer.propTypes = {
+  score: PropTypes.number.isRequired,
+  uname: PropTypes.string.isRequired,
+  playAgain: PropTypes.func.isRequired,
+
 };
 const mapStateToProps = state => ({
   questions: state.quiz.questions,

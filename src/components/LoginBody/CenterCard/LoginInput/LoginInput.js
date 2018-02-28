@@ -77,5 +77,6 @@ const mapDispatchToProps = dispatch => ({
 LoginInput.defaultProps = {
 };
 LoginInput.propTypes = {
+  getQuestions: PropTypes.func.isRequired,
 };
 export default connect(null, mapDispatchToProps)(LoginInput);

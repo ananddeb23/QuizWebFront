@@ -21,6 +21,7 @@ class Header extends React.Component {
 Header.defaultProps = {
 };
 Header.propTypes = {
+  uname: PropTypes.string.isRequired,
 };
 const mapStateToProps = state => ({
 

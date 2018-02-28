@@ -159,12 +159,14 @@ class QuestionsContainer extends React.Component {
 
       return (<div className="QuestionsContainer">{this.state.renderval}
         <div className="CalculateButtonHold"> <button className="CalculateButton" disabled={this.state.showbutton} onClick={this.handleCalculate}> Calculate </button></div>
-      </div>);
+              </div>);
     }
 }
 QuestionsContainer.defaultProps = {
 };
 QuestionsContainer.propTypes = {
+  uname: PropTypes.string.isRequired,
+  getScore: PropTypes.func.isRequired,
 };
 const mapStateToProps = state => ({
   questions: state.quiz.questions,
