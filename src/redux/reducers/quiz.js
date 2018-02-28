@@ -11,7 +11,7 @@ const defaultState = {
 export default (state = defaultState, action) => {
   switch (action.type) {
     case 'PLAY_AGAIN': {
-      return { ...state, page: 'showquestions' };
+      return { ...state, page: 'login' };
     }
 
     case 'GET_SCORE': {
