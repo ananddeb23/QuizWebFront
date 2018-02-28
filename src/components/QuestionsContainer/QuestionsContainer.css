@@ -1,19 +1,21 @@
 .QuestionsContainer{
     display: flex;
-    flex-direction: row;
-    flex-grow: 8;
+    flex-direction: column;
+    
+    margin: 10%;
     background-color: white;
     color:black;
     justify-content: space-around;
-    align-items: stretch;
+   
     overflow: auto;
   
 }
 .QuestionOuter{
     display: flex;
     flex-direction: column;
-      justify-content: space-around;
-    height:600px;
+      margin: 10px;
+   
+    align-items: stretch;
     
    
   
@@ -33,9 +35,16 @@
        border: 1px solid black;
        
 }
+.CalculateButtonHold{
+    margin-top: 60px;
+      display: flex;
+     
+      justify-content: center;
+      align-items: center;
+}
 .CalculateButton {
     border-radius: 5px;
     border: 2px solid black;
-    width: 60%;
+    width: 20%;
     height: 30px;
 }

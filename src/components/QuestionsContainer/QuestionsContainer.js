@@ -158,8 +158,8 @@ class QuestionsContainer extends React.Component {
     //   }
 
       return (<div className="QuestionsContainer">{this.state.renderval}
-        <button className="CalculateButton" disabled={this.state.showbutton} onClick={this.handleCalculate}> Calculate </button>
-              </div>);
+        <div className="CalculateButtonHold"> <button className="CalculateButton" disabled={this.state.showbutton} onClick={this.handleCalculate}> Calculate </button></div>
+      </div>);
     }
 }
 QuestionsContainer.defaultProps = {

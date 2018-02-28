@@ -1,6 +1,7 @@
 .LoginBody {
     display: flex;
-    flex-grow: 8;
+    flex-grow: 1;
+    height: 900px;
     background-color: #18224B;
     justify-content: center;
     align-items: center;
