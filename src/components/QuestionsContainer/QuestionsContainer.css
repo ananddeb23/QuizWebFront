@@ -1,0 +1,41 @@
+.QuestionsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 8;
+    background-color: white;
+    color:black;
+    justify-content: space-around;
+    align-items: stretch;
+    overflow: auto;
+  
+}
+.QuestionOuter{
+    display: flex;
+    flex-direction: column;
+      justify-content: space-around;
+    height:600px;
+    
+   
+  
+}
+.QuestionHeader{
+   
+     border: 1px solid black;
+}
+.QuestionContent{
+  
+    background-color: #6BE5F0;
+    text-align: center;
+    border: 1px solid black;
+}
+.QuestionOptions{
+    
+       border: 1px solid black;
+       
+}
+.CalculateButton {
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 60%;
+    height: 30px;
+}

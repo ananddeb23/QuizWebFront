@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import LoginBody from './components/LoginBody/LoginBody';
+import QuestionsContainer from './components/QuestionsContainer/QuestionsContainer';
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
       return (
         <div className="App">
           <Header uname={this.props.uname} />
-          <h1> hello </h1>
+          <QuestionsContainer />
         </div>
       );
     }

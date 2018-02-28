@@ -25,8 +25,9 @@ class LoginInput extends React.Component {
     axios.get(urltoreq)
       .then((response) => {
         console.log(response);
-        const obj = { questions: response, uname: this.state.text };
-        this.props.getQuestions(obj);
+        // const obj = { questions: response.data, uname: this.state.text };
+        const ar = [response.data, this.state.text];
+        this.props.getQuestions(ar);
       })
       .catch((error) => {
         console.log(error);

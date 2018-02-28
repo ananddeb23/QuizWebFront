@@ -39,9 +39,9 @@ export default (state = defaultState, action) => {
       return { ...state, page: action.payload, status: 'last sync successful' };
     }
     case 'GET_QUESTIONS': {
-      console.log(action.payload);
+      // console.log('payload', action.payload);
       return {
-        ...state, questions: action.payload.questions, page: 'showquestions', uname: action.payload.uname,
+        ...state, questions: action.payload[0], page: 'showquestions', uname: action.payload[1],
       };
       // return state;
     }
