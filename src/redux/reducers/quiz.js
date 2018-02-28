@@ -3,10 +3,8 @@ const defaultState = {
   questions: [],
   page: 'login',
   uname: '',
-  notescount: 0,
-  defText: '',
-  defTitle: '',
-  status: '',
+  score: 0,
+
 };
 
 
@@ -32,11 +30,16 @@ export default (state = defaultState, action) => {
         ...state, notes: newnote, page: 'shownote', notescount: state.notes.length + 1, defText: '', defTitle: '',
       };
     }
-    case 'TOGGLE_PAGE': {
-      return { ...state, page: 'addnote' };
+    case 'PLAY_AGAIN': {
+      return { ...state, page: 'showquestions' };
     }
-    case 'SYNC_ACTION': {
-      return { ...state, page: action.payload, status: 'last sync successful' };
+
+    case 'GET_SCORE': {
+      // console.log('payload', action.payload);
+      return {
+        ...state, score: action.payload[0], page: action.payload[1],
+      };
+      // return state;
     }
     case 'GET_QUESTIONS': {
       // console.log('payload', action.payload);

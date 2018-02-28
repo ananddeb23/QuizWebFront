@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import LoginBody from './components/LoginBody/LoginBody';
 import QuestionsContainer from './components/QuestionsContainer/QuestionsContainer';
+import ScoresContainer from './components/ScoresContainer/ScoresContainer';
+
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -22,6 +24,13 @@ class App extends Component {
         <div className="App">
           <Header uname={this.props.uname} />
           <QuestionsContainer />
+        </div>
+      );
+    } else if (this.props.page === 'showscores') {
+      return (
+        <div className="App">
+          <Header uname={this.props.uname} />
+          <ScoresContainer />
         </div>
       );
     }

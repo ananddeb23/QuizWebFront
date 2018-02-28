@@ -1,0 +1,87 @@
+.ScoresContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    background-color: white;
+    color: black;
+    justify-content: space-around;
+    align-items: stretch;
+    overflow: auto;
+}
+.Orangetitle{
+    color: orange;
+}
+.Bigscore{
+    font-size: 60px;
+
+}
+.Smallscore {
+    font-size: 40px;
+}
+.ScoresTitle{
+    align-items: center;
+    text-align: center;
+}
+.Playagainbtn{
+     border-radius: 5px;
+     border: 2px solid black;
+     width: 30%;
+     height: 30px;
+}
+.PointOuter{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+    padding: 2px;
+    background-color: #6BE5F0;
+    width: 60%;
+    height: 30px;
+    margin: 10px;
+    
+}
+.Scorevalue{
+    margin-left: 30px;
+}
+.PointUname{
+    color: white;
+    flex-grow: 4;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+.PointIndex{
+    margin-left: 30px;
+    margin-top: 8px;
+}
+.PointScore{
+    color: white;
+       margin-right: 30px;
+       margin-top: 8px
+}
+.BtnScoreContain{
+      display: flex;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+}
+.Scores{
+    overflow-y: auto;
+    justify-content: center;
+      display: flex;
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+}
+.SpecialOuter {
+      display: flex;
+      height: 30px;
+      width: 60%;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: stretch;
+      background-color: greenyellow;
+       margin: 10px;
+
+        width: 60%;
+
+}

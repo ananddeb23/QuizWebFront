@@ -1,7 +1,7 @@
 const EDIT_NOTE = 'EDIT_NOTE';
 const SAVE_NOTE = 'SAVE_NOTE';
-const TOGGLE_PAGE = 'TOGGLE_PAGE';
-const SYNC_ACTION = 'SYNC_ACTION';
+const PLAY_AGAIN = 'PLAY_AGAIN';
+const GET_SCORE = 'GET_SCORE';
 const GET_QUESTIONS = 'GET_QUESTIONS';
 export const editNote = payload => ({
   type: EDIT_NOTE,
@@ -13,13 +13,13 @@ export const saveNote = payload => ({
   payload,
 });
 
-export const togglePage = () => ({
-  type: TOGGLE_PAGE,
+export const playAgain = () => ({
+  type: PLAY_AGAIN,
 
 });
 
-export const syncAction = payload => ({
-  type: SYNC_ACTION,
+export const getScore = payload => ({
+  type: GET_SCORE,
   payload,
 
 });
